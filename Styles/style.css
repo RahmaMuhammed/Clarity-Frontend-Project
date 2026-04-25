@@ -205,8 +205,7 @@ a.learn-more-btn.text-color-orange:hover {
 }
 
 a.contact-us-btn.text-color-orange:hover i,
-a.learn-more-btn.text-color-orange:hover i,
-.social-btn:hover i {
+a.learn-more-btn.text-color-orange:hover i{
     color: var(--Color2) !important;
 }
 
@@ -421,9 +420,20 @@ a.learn-more-btn.text-color-orange:hover i,
 .form-check-input:focus {
     box-shadow: 0 0 0 0.25rem rgba(237, 162, 58, 0.25);
 }
-.social-btn
+/* .social-btn:hover i
 {
-    border:  var(--Color);
     background :var(--Color);
     color: white    ;
+} */
+ /* .social-btn {
+    color: var(--Color);
+} */
+
+.social-btn:hover {
+    background: var(--Color);
+    color: white;
+}
+
+.social-btn:hover i {
+    color: white;
 }
