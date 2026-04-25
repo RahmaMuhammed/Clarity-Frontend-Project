@@ -12,155 +12,195 @@
     <link rel="stylesheet" href="Styles/style.css" />
 </head>
 
-<body>
-
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <div class="d-flex align-items-center gap-5">
                 <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2 m-0" href="#">
-                    <span class="brand-icon d-flex justify-content-center align-items-center text-white rounded-3">
+                    <span class="brand-icon gradient-1 d-flex justify-content-center align-items-center text-white rounded-3">
                         <i class="fa-solid fa-cube"></i>
                     </span>
                     <span>Clarity</span>
                 </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                        <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item dropdown position-static">
 
-                <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
-                    <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item services-dropdown position-relative">
-                        <a class="nav-link" href="#services">
-                            Services <i class="fa-solid fa-chevron-down ms-1 small"></i>
-                        </a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
 
-                        <div class="mega-menu bg-white shadow-lg rounded-4 p-4 m-3">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-lg-4">
-                                    <h6 class="text-color-orange fw-bold small mb-4">DEVELOPMENT</h6>
+                            <div
+                                class="mega-menu dropdown-menu bg-white shadow-lg rounded-4 p-4 border-0 mt-3 start-50 translate-middle-x">
 
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-code"></i>
-                                        </div>
+                                <div class="row g-4">
 
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold ">Web Development</h6>
-                                            <p class="text-muted small mb-0 ">Custom web applications & websites</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa fa-mobile-phone"></i>
+                                    <!-- DEVELOPMENT -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <h6 class="text-color-orange fw-bold small mb-4">DEVELOPMENT</h6>
 
-                                        </div>
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-code"></i>
+                                                </div>
 
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold ">UI/UX Design</h6>
-                                            <p class="text-muted small mb-0 ">User Research & Testing</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa fa-cloud "></i>
-                                        </div>
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Web Development</h6>
+                                                    <p class="text-muted small mb-0">Custom web applications & websites
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
 
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold ">Mobile Apps</h6>
-                                            <p class="text-muted small mb-0 ">iOS & Android Development</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                                </div>
 
-                                <div class="col-md-6 col-lg-4">
-                                    <h6 class="text-color-orange fw-bold small mb-4">INFRASTRUCTURE & AI</h6>
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">UI/UX Design</h6>
+                                                    <p class="text-muted small mb-0">User Research & Testing</p>
+                                                </div>
+                                            </div>
+                                        </a>
 
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-cloud"></i>
-                                        </div>
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold">Cloud Solutions</h6>
-                                            <p class="text-muted small mb-0">Scalable cloud infrastructure</p>
-                                        </div>
-                                    </div>
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-cloud"></i>
+                                                </div>
 
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-brain"></i>
-                                        </div>
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold">AI & Machine Learning</h6>
-                                            <p class="text-muted small mb-0">Intelligent automation solutions</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-database"></i>
-                                        </div>
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold">Data Solutions</h6>
-                                            <p class="text-muted small mb-0">Database & analytics platforms</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-4">
-                                    <h6 class="text-color-orange fw-bold small mb-4">MARKETING</h6>
-
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-chart-line"></i>
-                                        </div>
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold">Digital Marketing</h6>
-                                            <p class="text-muted small mb-0">SEO, SEM & social media</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex gap-3 mb-4 align-items-start">
-                                        <div
-                                            class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-bullhorn"></i>
-                                        </div>
-                                        <div class="dropdown-font-size">
-                                            <h6 class="mb-1 fw-bold">Content Strategy</h6>
-                                            <p class="text-muted small mb-0">Engaging content creation</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown-help rounded-4 p-3 mt-4">
-                                        <h6 class="fw-bold mb-2">Need help choosing?</h6>
-                                        <p class="text-muted small mb-2">
-                                            Talk to our experts to find the perfect solution for your business.
-                                        </p>
-                                        <a href="#"
-                                            class="contact-us-btn text-color-orange small fw-bold text-decoration-none">
-                                            Contact us
-                                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Mobile Apps</h6>
+                                                    <p class="text-muted small mb-0">iOS & Android Development</p>
+                                                </div>
+                                            </div>
                                         </a>
                                     </div>
+
+                                    <!-- INFRASTRUCTURE & AI -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <h6 class="text-color-orange fw-bold small mb-4">INFRASTRUCTURE & AI</h6>
+
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-cloud"></i>
+                                                </div>
+
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Cloud Solutions</h6>
+                                                    <p class="text-muted small mb-0">Scalable cloud infrastructure</p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-brain"></i>
+                                                </div>
+
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">AI & Machine Learning</h6>
+                                                    <p class="text-muted small mb-0">Intelligent automation solutions
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-database"></i>
+                                                </div>
+
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Data Solutions</h6>
+                                                    <p class="text-muted small mb-0">Database & analytics platforms</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- MARKETING -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <h6 class="text-color-orange fw-bold small mb-4">MARKETING</h6>
+
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-chart-line"></i>
+                                                </div>
+
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Digital Marketing</h6>
+                                                    <p class="text-muted small mb-0">SEO, SEM & social media</p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="dropdown-item service-item rounded-4 p-3 mb-2">
+                                            <div class="d-flex gap-3 align-items-start">
+                                                <div
+                                                    class="service-icon-navbar rounded-3 d-flex justify-content-center align-items-center">
+                                                    <i class="fa-solid fa-bullhorn"></i>
+                                                </div>
+
+                                                <div class="dropdown-font-size">
+                                                    <h6 class="mb-1 fw-bold">Content Strategy</h6>
+                                                    <p class="text-muted small mb-0">Engaging content creation</p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-help rounded-4 p-3 mt-4">
+                                            <h6 class="fw-bold mb-2">Need help choosing?</h6>
+
+                                            <p class="text-muted small mb-2">
+                                                Talk to our experts to find the perfect solution for your business.
+                                            </p>
+
+                                            <a href="#"
+                                                class="contact-us-btn text-color-orange small fw-bold text-decoration-none">
+                                                Contact us
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item "><a class="nav-link" href="#technology">Technology</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#client-testimonials">Testimonials</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#">FAQ</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center gap-3">
-                <a href="#" class="btn sign-in-btn border-0">Sign In</a>
-                <a href="#" class="btn navbar-btn-2 rounded-4">Get Started</a>
-            </div>
+
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="#technology">Technology</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#client-testimonials">Testimonials</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <div
+                        class="navbar-actions d-flex align-items-lg-center gap-3 flex-column flex-lg-row ms-lg-5 ps-lg-5 mt-3 mt-lg-0">
+                        <a href="#" class="btn sign-in-btn border-0">Sign In</a>
+                        <a href="#" class="btn navbar-btn-2 rounded-4">Get Started</a>
+                    </div>
+                </div>
 
         </div>
     </nav>
@@ -226,12 +266,13 @@
                         </div>
 
                         <div
-                            class="hero-icon icon-code position-absolute z-2 shadow rounded-3 d-flex justify-content-center align-items-center text-white">
-                            &lt;/&gt;
+                            class="hero-icon gradient-1 icon-code position-absolute z-2 shadow rounded-3 d-flex justify-content-center align-items-center text-white">
+                                <i class="fa-solid fa-code"></i>
+
                         </div>
 
                         <div
-                            class="hero-icon icon-mobile position-absolute z-2 shadow rounded-3 d-flex justify-content-center align-items-center text-white">
+                            class="hero-icon gradient-1 icon-mobile position-absolute z-2 shadow rounded-3 d-flex justify-content-center align-items-center text-white">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </div>
 
@@ -267,8 +308,8 @@
                     <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
-                            &lt;/&gt;
+                            class="service-icon gradient-1 hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                             <i class="fa-solid fa fa-code"></i>
                         </div>
 
                         <h3 class="text-2 fw-bold mb-2 fs-5">Web Development</h3>
@@ -308,7 +349,7 @@
                     <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                            class="service-icon gradient-1 hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
                             <i class="fa-solid fa fa-mobile-phone"></i>
 
                         </div>
@@ -351,7 +392,7 @@
                     <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                            class="service-icon hero-icon gradient-1 shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
                             <i class="fa-solid fa fa-cloud "></i>
                         </div>
 
@@ -399,7 +440,7 @@
                     <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                            class="service-icon hero-icon gradient-1 shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
                             <i class="fa-solid fa fa-brain"></i>
 
                         </div>
@@ -438,10 +479,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
+                    <div class="service-card position-relative  bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                            class="service-icon hero-icon shadow gradient-1 rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
                             <i class="fa-solid fa fa-line-chart"></i>
 
                         </div>
@@ -484,7 +525,7 @@
                     <div class="service-card position-relative bg-white border rounded-4 shadow-sm p-4 h-100">
 
                         <div
-                            class="service-icon hero-icon shadow rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
+                            class="service-icon hero-icon shadow gradient-1 rounded-3 d-flex justify-content-center align-items-center text-white mb-4">
                             <i class="fa-solid fa fa-palette "></i>
                         </div>
 
@@ -1602,7 +1643,8 @@
                                                     <input class="form-check-input" type="checkbox" id="privacyCheck">
                                                     <label class="form-check-label" for="privacyCheck">
                                                         I agree to receive communications and accept the
-                                                        <a href="" class="text-color-orange text-decoration-none">Privacy Policy</a>
+                                                        <a href=""
+                                                            class="text-color-orange text-decoration-none">Privacy Policy</a>
                                                     </label>
                                                 </div>
                                             </div>
@@ -1627,7 +1669,7 @@
                                     <h5 class="fw-bold mb-4">Why Choose Clarity?</h5>
 
                                     <div class="d-flex gap-3 mb-4">
-                                        <div class="bg-white bg-opacity-25 rounded-3 p-2">
+                                        <div class=" contact-icon bg-white bg-opacity-25 rounded-3 p-2">
                                             <i class="fa-solid fa-clock"></i>
                                         </div>
                                         <div>
@@ -1638,7 +1680,7 @@
                                     </div>
 
                                     <div class="d-flex gap-3 mb-4">
-                                        <div class="bg-white bg-opacity-25 rounded-3 p-2">
+                                        <div class="contact-icon bg-white bg-opacity-25 rounded-3 p-2">
                                             <i class="fa-solid fa-shield-halved"></i>
                                         </div>
                                         <div>
@@ -1649,7 +1691,7 @@
                                     </div>
 
                                     <div class="d-flex gap-3 mb-4">
-                                        <div class="bg-white bg-opacity-25 rounded-3 p-2">
+                                        <div class="contact-icon bg-white bg-opacity-25 rounded-3 p-2">
                                             <i class="fa-solid fa-users"></i>
                                         </div>
                                         <div>
@@ -1690,75 +1732,76 @@
         </div>
     </section>
     <div class="modal fade" id="successModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4 border-0">
-            <div class="modal-body text-center p-4">
-                <i class="fa-solid fa-circle-check text-success fs-1 mb-3"></i>
-                <h5 class="fw-bold">Message Sent Successfully!</h5>
-                <p class="text-muted mb-0">
-                    We'll get back to you within 24 hours.
-                </p>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-body text-center p-4">
+                    <i class="fa-solid fa-circle-check text-success fs-1 mb-3"></i>
+                    <h5 class="fw-bold">Message Sent Successfully!</h5>
+                    <p class="text-muted mb-0">
+                        We'll get back to you within 24 hours.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Footer -->
-<footer class="py-5 bg-white">
-    <div class="container">
+    <footer class="py-5 bg-white">
+        <div class="container">
 
-        <div class="d-flex justify-content-between align-items-start flex-wrap gap-4 mb-5">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-4 mb-5">
 
-            <div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                    <span class="gradient-1 text-white rounded-3 d-inline-flex align-items-center justify-content-center p-2">
-                        <i class="fa-solid fa-cube"></i>
-                    </span>
-                    <h5 class="fw-bold mb-0">Clarity</h5>
+                <div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span
+                            class="gradient-1 text-white rounded-3 d-inline-flex align-items-center justify-content-center p-2">
+                            <i class="fa-solid fa-cube"></i>
+                        </span>
+                        <h5 class="fw-bold mb-0">Clarity</h5>
+                    </div>
+
+                    <p class="text-muted mb-0" style="max-width: 420px;">
+                        Transforming businesses through innovative digital solutions and
+                        cutting-edge technology.
+                    </p>
                 </div>
 
-                <p class="text-muted mb-0" style="max-width: 420px;">
-                    Transforming businesses through innovative digital solutions and
-                    cutting-edge technology.
+                <div class="d-flex gap-3">
+    <a href="#" class="btn btn-light rounded-3 social-btn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="#" class="btn btn-light rounded-3 social-btn">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+
+    <a href="#" class="btn btn-light rounded-3 social-btn">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="#" class="btn btn-light rounded-3 social-btn">
+        <i class="fa-brands fa-dribbble"></i>
+    </a>
+</div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center text-muted small mt-4">
+                <p class="mb-2">
+                    © 2025 Clarity. All rights reserved.
+                </p>
+
+                <p class="mb-0">
+                    Made with
+                    <i class="fa-solid fa-heart text-color-orange mx-1"></i>
+                    for amazing experiences
                 </p>
             </div>
 
-            <div class="d-flex gap-3">
-                <a href="#" class="btn btn-light rounded-3">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="#" class="btn btn-light rounded-3">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-
-                <a href="#" class="btn btn-light rounded-3">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="#" class="btn btn-light rounded-3">
-                    <i class="fa-brands fa-dribbble"></i>
-                </a>
-            </div>
-
         </div>
-
-        <hr>
-
-        <div class="text-center text-muted small mt-4">
-            <p class="mb-2">
-                © 2025 Clarity. All rights reserved.
-            </p>
-
-            <p class="mb-0">
-                Made with
-                <i class="fa-solid fa-heart text-color-orange mx-1"></i>
-                for amazing experiences
-            </p>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 
     <script src="Js/bootstrap.bundle.min.js"></script>
 </body>
