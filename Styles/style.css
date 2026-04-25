@@ -419,14 +419,11 @@ a.learn-more-btn.text-color-orange:hover i,
 }
 
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(237, 162, 58, 0.25);
 }
 .social-btn
 {
-    color: var(--Color ;
-}
-.social-btn:hover {
-    background-color: var(--Color);
-    opacity: 0.75;
-    /* border-color: var(--Color2) !important; */
+    border:  var(--Color);
+    background :var(--Color);
+    color: white    ;
 }
